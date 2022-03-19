@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 (async () => {
 	const browser = await puppeteer.launch({headless: true});
 	const page = await browser.newPage();
-    const url = "https://www.appchoose.io/product/sandqvist-sac-a-dos-roald-76a";
+    	const url = "https://www.appchoose.io/product/sandqvist-sac-a-dos-roald-76a";
 	await page.goto(url);
 	let content = await page.evaluate(() => {
 		let result = [];
